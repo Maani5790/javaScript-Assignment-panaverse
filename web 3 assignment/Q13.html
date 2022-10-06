@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q-13</title>
+  </head>
+  <body>
+    <script>
+      function cars_details(name, model, ...options) {
+        document.writeln(`cars`);
+
+        car_parts = {
+          name: name,
+          model: model,
+          options: options,
+        };
+
+        return car_parts;
+      }
+      cars = cars_details("Ferrari", "488 Pista Spider", (color = "White"));
+      console.log(cars);
+    </script>
+  </body>
+</html>
